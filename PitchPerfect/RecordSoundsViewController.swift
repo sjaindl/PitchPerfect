@@ -48,9 +48,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func configureUI(enableRecording: Bool) {
-        recordingLabel.text = enableRecording ? "Tap to Record" : "Recording in Progress"
+        recordingLabel.text = enableRecording ? "Tap to start recording" : "Tap to finish recording"
         recordButton.isEnabled = enableRecording
         stopRecordingButton.isEnabled = !enableRecording
+        stopRecordingButton.isHidden = enableRecording
+        recordButton.isHidden = !enableRecording
     }
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {

@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEc-SW-GDo">
-                                <rect key="frame" x="110" y="256" width="155" height="155"/>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEc-SW-GDo">
+                                <rect key="frame" x="110" y="288" width="155" height="155"/>
                                 <state key="normal" image="Record">
                                     <color key="titleColor" red="0.25533942935913823" green="1" blue="0.22509632460678863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -27,32 +27,28 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ZO-6o-cBI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyt-Eg-FBt">
-                                <rect key="frame" x="134.5" y="419" width="106.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to start recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyt-Eg-FBt">
+                                <rect key="frame" x="105.5" y="463" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K5-0c-wjI">
-                                <rect key="frame" x="156" y="447.5" width="64" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="43F-Sl-K5H"/>
-                                    <constraint firstAttribute="height" constant="64" id="jNw-3I-xOC"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K5-0c-wjI">
+                                <rect key="frame" x="110.5" y="288" width="155" height="155"/>
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xx6-vv-jps"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.30393401015228427" green="0.30393401015228427" blue="0.30393401015228427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5K5-0c-wjI" firstAttribute="top" secondItem="Jyt-Eg-FBt" secondAttribute="bottom" constant="8" id="4ej-o2-Mia"/>
-                            <constraint firstItem="aEc-SW-GDo" firstAttribute="centerX" secondItem="uAm-lv-nJC" secondAttribute="centerX" id="PcX-4K-q63"/>
-                            <constraint firstItem="Jyt-Eg-FBt" firstAttribute="centerX" secondItem="aEc-SW-GDo" secondAttribute="centerX" id="T2C-Tv-M9S"/>
-                            <constraint firstItem="Jyt-Eg-FBt" firstAttribute="top" secondItem="aEc-SW-GDo" secondAttribute="bottom" constant="8" id="b5a-0N-lRG"/>
-                            <constraint firstItem="5K5-0c-wjI" firstAttribute="centerX" secondItem="Jyt-Eg-FBt" secondAttribute="centerX" id="bbl-JU-JLg"/>
-                            <constraint firstItem="aEc-SW-GDo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lBM-Nk-KqQ"/>
+                            <constraint firstItem="aEc-SW-GDo" firstAttribute="centerX" secondItem="uAm-lv-nJC" secondAttribute="centerX" id="1Pp-eu-Nbs"/>
+                            <constraint firstItem="Jyt-Eg-FBt" firstAttribute="centerX" secondItem="aEc-SW-GDo" secondAttribute="centerX" id="RU2-S5-w4j"/>
+                            <constraint firstItem="5K5-0c-wjI" firstAttribute="centerY" secondItem="uAm-lv-nJC" secondAttribute="centerY" id="Rsj-jz-vhs"/>
+                            <constraint firstItem="aEc-SW-GDo" firstAttribute="centerY" secondItem="uAm-lv-nJC" secondAttribute="centerY" id="Tzd-vy-fSd"/>
+                            <constraint firstItem="Jyt-Eg-FBt" firstAttribute="top" secondItem="aEc-SW-GDo" secondAttribute="bottom" constant="20" id="eG1-ow-UFt"/>
+                            <constraint firstItem="5K5-0c-wjI" firstAttribute="centerX" secondItem="uAm-lv-nJC" secondAttribute="centerX" id="zRh-6F-aUh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uAm-lv-nJC"/>
                     </view>
@@ -154,7 +150,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.32784164507772018" green="0.32784164507772018" blue="0.32784164507772018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xmb-X8-Yw8" firstAttribute="top" secondItem="pfx-UA-pjT" secondAttribute="top" id="MJB-Mh-n1b"/>
                             <constraint firstItem="Xmb-X8-Yw8" firstAttribute="leading" secondItem="pfx-UA-pjT" secondAttribute="leading" id="VxI-kr-j9G"/>
