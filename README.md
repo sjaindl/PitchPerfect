@@ -7,6 +7,6 @@ The record screen allows record audio:
 ![memeMeTableView](pitchPerfect_recordScreen.png)
  
 After a sound has been record it can be recorded in 6 different remixes:
-![memeMeTableView](pitchPerfect_recordScreen.png)
+![memeMeTableView](pitchPerfect_playScreen.png)
   
 Have fun :)
